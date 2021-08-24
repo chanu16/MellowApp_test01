@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MellowApp">
-        <activity android:name=".RecommendationMain"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".DocDetailsActivity"></activity>
+        <activity android:name=".DoctorListActivity" />
+        <activity android:name=".RecommendationMain" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
