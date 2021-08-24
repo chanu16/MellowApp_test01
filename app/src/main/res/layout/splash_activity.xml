@@ -9,31 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="308dp"
-        android:layout_height="493dp"
+        android:layout_width="194dp"
+        android:layout_height="373dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
         app:srcCompat="@drawable/tmellow" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="260dp"
-        android:layout_height="94dp"
-        android:fontFamily="serif-monospace"
-        android:text="Mellow"
-        android:textAlignment="center"
-        android:textColor="#00cec9"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
 </androidx.constraintlayout.widget.ConstraintLayout>
