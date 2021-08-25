@@ -23,4 +23,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), RecommendationMain.class);
         startActivity(intent);
     }
+
+    public void goToJournalFirst(View view) {
+        Intent intent = new Intent(getApplicationContext(), JournalFirstMenu.class);
+        startActivity(intent);
+    }
 }

@@ -106,7 +106,31 @@
                 app:cardCornerRadius="20dp"
                 app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true" />
+                app:cardUseCompatPadding="true" >
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="goToJournalFirst"
+                    app:srcCompat="@drawable/journal" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="85dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textAlignment="center"
+                    android:textColor="@color/btcolor"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="My Journal" />
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="180dp"
