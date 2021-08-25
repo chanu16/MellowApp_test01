@@ -14,8 +14,8 @@ public class SecondWelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second_welcome);
     }
 
-    public void goToNext(View view) {
-        Intent intent = new Intent(getApplicationContext(), SecondWelcomeActivity.class);
+    public void goToHome(View view) {
+        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(intent);
     }
 }
