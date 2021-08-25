@@ -3,126 +3,198 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/btcolor"
     android:layout_height="match_parent"
     tools:context=".RecommendationMain">
 
-    <View
-        android:id="@+id/view1V"
-        android:layout_width="297dp"
-        android:layout_height="547dp"
-        android:background="@drawable/roundview"
-        android:backgroundTint="#33BFAE"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/custom_rectangle"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="1.0">
 
-    <ImageButton
-        android:id="@+id/imageButton1V"
-        android:layout_width="89dp"
-        android:layout_height="89dp"
-        android:background="@drawable/roundbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152"
-        app:srcCompat="@drawable/music" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/imageButton2V"
-        android:layout_width="89dp"
-        android:layout_height="89dp"
-        android:background="@drawable/roundbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.732"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344"
-        app:srcCompat="@drawable/book" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="serif-monospace"
+                android:text="Music"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imageButton3V"
-        android:layout_width="89dp"
-        android:layout_height="89dp"
-        android:background="@drawable/roundbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545"
-        app:srcCompat="@drawable/quill" />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="230dp"
+                android:fontFamily="serif-monospace"
+                android:text="Games"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imageButton4V"
-        android:layout_width="89dp"
-        android:layout_height="89dp"
-        android:background="@drawable/roundbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.732"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718"
-        app:srcCompat="@drawable/puzzle" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="serif-monospace"
+                android:text="Poems"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView1V"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MUSIC"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.29"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3V"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GAMES"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="612dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView4V"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="POEMS"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/music" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/book" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="serif-monospace"
+                android:text="Books"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="612dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="270dp"
+                android:background="@color/white"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/game" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="270dp"
+                android:background="@color/white"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/poem" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BOOKS"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="166dp"
+        android:layout_height="92dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Discover Recommendations"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.884" />
 </androidx.constraintlayout.widget.ConstraintLayout>
